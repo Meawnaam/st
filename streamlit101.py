@@ -11,7 +11,7 @@ status = st.radio("Select an option",
                 
 
 
-if status == "Sucess" :
+if status == "Success" :
     placeholder.success("Success!")
 else :
     placeholder.error("Error")
