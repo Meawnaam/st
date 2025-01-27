@@ -30,10 +30,10 @@ st.area_chart(chart_data)
 
 df = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/refs/heads/master/penguins.csv")
 
-c = alt.Chart(df).mark_circle(size =60).encode(
-    x= "bill_length_mm",
-    y = "body_mass_g",
-    color = "species"
+c = alt.Chart(df).mark_circle(size=60).encode(
+    x="bill_length_mm",
+    y="body_mass_g",
+    color="species",
 ).interactive()
 
 st.altair_chart(c, use_container_width=True)
